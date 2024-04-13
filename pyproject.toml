@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "fastapi-tutorial"
+version = "0.1.0"
+description = "FastAPI Tutorial"
+authors = ["Mohit Shrestha <contact@mohitshrestha.com.np>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.110.1"
+uvicorn = {extras = ["standard"], version = "^0.29.0"}
+
+[tool.poetry.group.dev.dependencies]
+rich = "^13.7.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
