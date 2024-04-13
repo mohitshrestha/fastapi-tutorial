@@ -35,3 +35,20 @@ or you can create a virtualenv with poetry and install the dependencies
 poetry shell
 poetry install
 ```
+
+### 5. Running the FastAPI app
+
+```bash
+uvicorn main:app --reload
+```
+
+or If run_fastapi_app.py file exist with the following code then we can simply run:
+```bash
+import uvicorn
+if __name__ == "__main__":
+    uvicorn.run("src:app", host="127.0.0.1", port=8000, reload=True)
+```
+
+```bash
+python run_fastapi_app.py
+```
