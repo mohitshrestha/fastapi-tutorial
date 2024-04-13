@@ -42,11 +42,12 @@ poetry install
 uvicorn main:app --reload
 ```
 
-or If run_fastapi_app.py file exist with the following code then we can simply run:
+or If run_fastapi_app.py file exist with the following example code then we can simply run:
+Please edit `src/fastapi-app/1-First_Steps/main:app` based on which chapter you are working on.
 ```bash
 import uvicorn
 if __name__ == "__main__":
-    uvicorn.run("src:app", host="127.0.0.1", port=8000, reload=True)
+    uvicorn.run("src/fasapi-app/1-First_Steps/main:app", host="127.0.0.1", port=8000, reload=True)
 ```
 
 ```bash
